@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	실습	
+	</title>
+	<style type="text/css">
+		body{perspective: 800px;}
+		.wrap{width: 800px; margin: auto;}
+		section{height: 600px; margin-bottom: 50px;}
+		.green{background: #0ff; position: relative;}
+		.blue{background: #00f;position: relative;}
+		.red{background: #f00; position: relative;}
+		.f1{width: 100px; background: black; height: 100px; position: absolute; color: white;}
+		.wig{z-index: 9; position: absolute; width: 600px; 
+			animation: ro 50s infinite linear;  display: block; }
+		.wig2{z-index: 9; position: absolute; width: 200px; 
+		animation: go 1s infinite linear;  display: block; }
+		.wig3{z-index: 9; position: absolute; width: 800px; 
+		animation: po 20s infinite linear;  display: block; }	 		
+
+	 /* 이름 시간 속도 방향*/
+
+	 		@keyframes  ro {
+	 			from{}
+	 			to { transform: rotate3D(1,1,1,360deg); }}
+	 		@keyframes 	go {
+	 			from{width: 210px; transform: rotate(10deg);}
+	 			to {transform: rotate(-10deg);}
+
+	 		}
+	 		@keyframes 	po {
+	 			from{left: 860px; width: 1800px;}
+	 			to {transform: rotate3D(1,0.8,0.5,-360deg); left: 100px;}
+
+	 		}		
+	</style>
+</head>
+
+<body>
+	<div class="f1" style="left: 50px; bottom: 100px; position: fixed;">top</div>
+	<div class="f1"></div>
+	 			 		
+	 <div class="wrap">
+	 	<section class="green">
+	 		zerland to the west and south and Austria to the east and north. It is Europe's fourth-smallest country, with an area of just over 160 square kilometres (62 square miles) and a population of 37,877.[9] Divided into 11 municipalities, its capital is Vaduz, and its largest municipality is Schaan. It is also the smallest country to border two countries.[10]
+
+			Economically, Liechtenstein has one of the highest gross domestic products per person in the world when adjusted for purchasing power parity.[11] It was once known as a billionaire tax haven, but is no longer on any blacklists of uncooperative tax haven countries (see taxation section).
+			<img src="http://www.pngpix.com/wp-content/uploads/2016/10/PNGPIX-COM-Alien-PNG-Transparent-Image-500x623.png" class="wig">
+			<img src="https://i.dlpng.com/static/png/5821_thumb.png" class="wig2">
+			<div class="f1" style="right: 50px; top: 0px;"></div>
+	 	</section>
+	 	<section class="red" style=" top: 200px;">
+	 		<img src="https://pngimg.com/uploads/alien/alien_PNG91.png" class="wig3">
+	 	</section>
+	 	<section class="blue">
+	 		<div class="f1"></div>
+
+	 	</section>
+	 </div>
+
+</body>
+
+</html>
